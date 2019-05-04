@@ -16,6 +16,12 @@ if mainItem is "Disable" and subItem is "for this app" then set subItem to 3
 
 tell application "System Events"
     tell application process "Flux"
+        set frontmost to true
+    end tell
+end tell
+
+tell application "System Events"
+    tell application process "Flux"
         tell menu bar 1
             tell menu bar item 1
                 try
